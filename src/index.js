@@ -16,9 +16,12 @@ function displayRecipe(response) {
 function generateRecipe(event) {
   event.preventDefault();
 
-  let recipeDiv = document.querySelector("#recipe");
-  recipeDiv.innerHTML = "Generating new recipe...";
   let instructionsInput = document.querySelector("#user-instructions");
+
+  let recipeDiv = document.querySelector("#recipe");
+  document.querySelector("#hidden").classList.remove("hidden");
+  recipeDiv.innerHTML = `<div class="generating">⏳Generating new recipe about  about ${instructionsInput.value}</div>`;
+
   let apiKey = "fad20348e4cdad62eo6a43actbfe6170";
   let context =
     "You are an AI assistant expert in gastronomy, you deliver the most famous recipes from all around the world. The recipe should be easy to reproduce at home and should not require many technical skills. Always format your response clearly with these sections: Recipe Name, Ingredients (as a bullet list), and Instructions (as numbered steps). Make sure to follow the user instructions.";

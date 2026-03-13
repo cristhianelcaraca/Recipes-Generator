@@ -11,8 +11,8 @@
       <h1>Welcome to the AI Recipes Generator</h1>
     </header>
     <main>
-      <div class="container">
-        <div class="card">
+      <div class="main-container">
+        <div class="form-container">
           <form id="generator-form">
             <input
               class="recipe-input"
@@ -25,6 +25,9 @@
             />
             <input type="submit" value="Submit" class="submit-button" />
           </form>
+          <div class="hint">i.e: Cake, tarte, rice, etc...</div>
+        </div>
+        <div class="hidden" id="hidden">
           <div class="recipe" id="recipe">
             <br />
           </div>
@@ -38,7 +41,11 @@
         Cristhiane Caraça
       </a>
       and is open-sourced on
-      <a href="https://github.com/cristhianelcaraca" target="_blank">GitHub</a>
+      <a
+        href="https://github.com/cristhianelcaraca/Recipes-Generator"
+        target="_blank"
+        >GitHub</a
+      >
       and is hosted on
       <a href="https://www.netlify.com" target="_blank">Netlify</a>
     </footer>
