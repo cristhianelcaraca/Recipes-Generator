@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Recipes AI Generator</title>
   </head>
@@ -18,16 +17,16 @@
             <input
               class="recipe-input"
               type="text"
-              placeholder="enter the type of recipe you're looking for"
+              placeholder="enter the recipe you're looking for"
               autofocus
               required
               autocomplete="off"
+              id="user-instructions"
             />
             <input type="submit" value="Submit" class="submit-button" />
           </form>
           <div class="recipe" id="recipe">
             <br />
-            Ingredients
           </div>
         </div>
       </div>
@@ -44,6 +43,7 @@
       <a href="https://www.netlify.com" target="_blank">Netlify</a>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="src/index.js"></script>
   </body>
 </html>
