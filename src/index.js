@@ -20,7 +20,7 @@ function generateRecipe(event) {
 
   let recipeDiv = document.querySelector("#recipe");
   document.querySelector("#hidden").classList.remove("hidden");
-  recipeDiv.innerHTML = `<div class="generating">⏳Generating a new recipe of ${instructionsInput.value}</div>`;
+  recipeDiv.innerHTML = `<div class="generating">⏳👩‍🍳 AI is cooking your recipe... ${instructionsInput.value}</div>`;
 
   let apiKey = "fad20348e4cdad62eo6a43actbfe6170";
   let context =
